@@ -1,1 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.cardContainer {
+    width: 45%;
+    height: 600px;
+}
+
+.floating-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.sidetoside{
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+.uploadtt{
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.heading {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: var(--orange);
+    font-size: 500%;
+    font-weight: 500;
+}
+
+.subheading {
+    margin-top: 0px;
+    color: black;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.buttonContainer {
+    width: 55%;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.buttonText {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
