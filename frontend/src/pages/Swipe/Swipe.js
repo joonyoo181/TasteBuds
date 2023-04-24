@@ -32,21 +32,28 @@ export default function Swipe() {
       tags: '11',
       color: '12',
     },
+    {
+      image: '13',
+      menuName: '22',
+      location: '32',
+      description: '24',
+      tags: '52',
+      color: '62',
+    },
   ]
 
   return (
       <>
         <Header/>
         <div className='swipe-page-layout'>
-            <h1 className='heading'>Swipe<span>Ripe</span></h1>
+            <h1 className='heading'>Swipe<span>Page</span></h1>
             <div className='swipe-beige-card'>
-              <Card content={
-                <>
+              
+              <div className='swipe-page-border-card'>
                   {arr.map((element) => (
                     <FoodCard image={element['image']} menuName={element['menuName']} />
                   ))}
-                </>
-              }/>
+              </div>
             </div>
       </div>
       </>
