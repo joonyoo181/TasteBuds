@@ -31,7 +31,7 @@ function FoodCard({image, menuName, location, description, tags, color}) {
                 
             </div>
             <div className='bottomHalf'>
-            <hr className='' style={{width: '100%', background: 'linear-gradient(to bottom right, #ffcf42, #EC6F34, #E24C52, #C6427B)', height: '40px', border: '0px',}} />
+            <hr className='' style={{width: '100%', background: 'linear-gradient(to bottom right, #ffcf42, #EC6F34, #E24C52, #C6427B)', height: '4%', border: '0px',}} />
               <div className='littleDiv'>
                 <h1 className='menuName'>Menu Name</h1>
                 <h3 className='location'>location </h3>
@@ -42,7 +42,7 @@ function FoodCard({image, menuName, location, description, tags, color}) {
                   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
                   velit esse
                 </p>
-                <hr className='' style={{width: '100%', background: 'linear-gradient(to bottom right, #ffcf42, #EC6F34, #E24C52, #C6427B)', height: '40px', border: '0px',}} />
+                <hr className='' style={{width: '100%', background: 'linear-gradient(to bottom right, #ffcf42, #EC6F34, #E24C52, #C6427B)', height: '4%', border: '0px',}} />
             </div>
             
           </div>

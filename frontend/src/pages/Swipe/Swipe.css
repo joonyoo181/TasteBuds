@@ -80,12 +80,10 @@ html, body {
     display: flex; 
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 80%;
-    
+    width: 40%;
+    height: 60%;
     border-radius: 20px;
-    
-
+    position: absolute;
 }
 
 .swipeCard{
@@ -149,12 +147,18 @@ html, body {
     color: var(--light-gray);
     padding-top: 3%;
 }
-.gradientLine{
-    
-        background:linear-gradient(to bottom right, #ffcf42, #EC6F34, #E24C52, #C6427B);
-        color: slateblue;
-        height: "5px";
-        border: "none";
-        width: 100%;
-}
 
+.swipe-page-border-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+
+    border: double 3px transparent;
+    border-radius: 10px;
+    
+    background-image: linear-gradient(white, white), linear-gradient(to bottom right, #ffcf42, #EC6F34, #E24C52, #C6427B);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
