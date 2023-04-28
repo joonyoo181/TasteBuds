@@ -15,7 +15,7 @@ cors = CORS(app, resource={
     }
 })
 
-app.config["MONGODB_HOST"] = "mongodb+srv://joonyoo181:yU20xMzrLK4N4uEu@tastebuds.syw7ofh.mongodb.net/?retryWrites=true&w=majority"
+app.config["MONGODB_HOST"] = "mongodb+srv://tylerautonsmith:n8Jd2LXhyThKnC79@tastebuds.syw7ofh.mongodb.net/?retryWrites=true&w=majority"
 
 db.__init__(app)
 
@@ -32,7 +32,13 @@ def create_user():
 
 @app.route('/get-users', methods = ['GET'])
 def get_users():
-    users = User.objects
+    users = User.objects()
+    return jsonify(users)
+
+@app.route('/get-user-info/<username>/<password>', methods = ['GET'])
+def get_user_info(username,password):
+    users = User.objects(user_name=username, password=password)
+                
     return jsonify(users)
 
 if __name__ == "__main__":
