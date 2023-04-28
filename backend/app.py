@@ -33,7 +33,7 @@ def create_user():
 
 @app.route('/get-users', methods = ['GET'])
 def get_users():
-    users = User.objects
+    users = User.objects()
     return jsonify(users)
 
 @app.route('/create-group', methods = ['POST'])
@@ -42,9 +42,9 @@ def create_group():
     new_group = Group(**body).save()
     return jsonify(new_group)
 
-@app.route('/get-group', methods = ['GET'])
+@app.route('/get-groups', methods = ['GET'])
 def get_group():
-    group = Group.objects
+    group = Group.objects()
     return jsonify(group)
 
 if __name__ == "__main__":
