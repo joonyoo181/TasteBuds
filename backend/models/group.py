@@ -6,3 +6,4 @@ class Group(db.Document):
     members = db.ListField(db.ReferenceField('User'))
     selected_tags = db.ListField(db.StringField())
     liked_foods = db.ListField(db.ReferenceField('Food'))
+    finished_members = db.ListField(db.ReferenceField('User'))
