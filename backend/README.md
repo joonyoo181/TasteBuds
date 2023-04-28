@@ -1,8 +1,11 @@
+## Link to the Routing Document
+https://docs.google.com/document/d/1LRkJwLfdthSCvPAzuJAZ2MGN4rbykbsdqdbSQgqtQ7Y/edit?usp=sharing
+
 ## Getting Started
 
-Make sure you're using a Python virtual environment in the bear-buddies/backend folder. 
+Make sure you're using a Python virtual environment in the TasteBuds/backend folder. 
 
-If you haven't created an virtual environment in the bear-buddies/backend folder, navigate to the bear-buddies/backend folder and type:
+If you haven't created an virtual environment in the TasteBuds/backend folder, navigate to the TasteBuds/backend folder and type:
 
 ```bash
 python -m venv venv #if your keyword is python
@@ -14,7 +17,7 @@ or
 python3 -m venv venv #if your keyword is python3
 ```
 
-To activate the Python virtual environment in the bear-buddies/backend folder, navigate to the bear-buddies/backend folder and type:
+To activate the Python virtual environment in the TasteBuds/backend folder, navigate to the TasteBuds/backend folder and type:
 
 ```bash
 . venv/bin/activate # if you are using Mac
@@ -23,7 +26,7 @@ To activate the Python virtual environment in the bear-buddies/backend folder, n
 
 You should see a (venv) to the left of your terminal.
 
-To install dependencies from requirements.txt, navigate to the bear-buddies/backend and run:
+To install dependencies from requirements.txt, navigate to the TasteBuds/backend and run:
 
 ```bash
 pip install -r requirements.txt
@@ -31,7 +34,7 @@ pip install -r requirements.txt
 
 ## Running the server
 
-To run the API server locally, navigate to the bear-buddies/backend folder and run: 
+To run the API server locally, navigate to the TasteBuds/backend folder and run: 
 
 ```bash
 python app.py

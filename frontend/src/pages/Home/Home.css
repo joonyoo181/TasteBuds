@@ -3,6 +3,11 @@ html, body {
     padding: 0;
 }
 
+.homeRoot {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero {
     height: 100vh;
     display: flex;
@@ -15,7 +20,9 @@ html, body {
     height: 350px;
 }
 
-.floating-card {
+.card-floating-card {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +37,7 @@ html, body {
 
 .cardText {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;

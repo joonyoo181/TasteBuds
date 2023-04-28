@@ -9,11 +9,12 @@ function Home() {
     const navigate = useNavigate();
 
     return (
-        <>
+        <div className='homeRoot'>
             <Header />
             <div className='hero'>
                 <div className='cardContainer'>
                     <Card content={
+                        <div className='card-floating-card'>
                         <div className='cardContent'>
                             <div className='cardText'>
                                 <h1 className='heading'>Taste<span>Buds</span></h1>
@@ -26,10 +27,11 @@ function Home() {
                                 onClickHandler={() => navigate("/login")}/>
                             </div>
                         </div>
+                        </div>
                     } isFloating={true}/>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

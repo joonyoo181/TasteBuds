@@ -4,6 +4,7 @@ import datetime as datetime
 
 from models import db
 from models.user import User
+from models.group import Group
 
 # Setup
 app = Flask(__name__)
@@ -38,8 +39,18 @@ def get_users():
 @app.route('/get-user-info/<username>/<password>', methods = ['GET'])
 def get_user_info(username,password):
     users = User.objects(user_name=username, password=password)
-                
     return jsonify(users)
+
+@app.route('/create-group', methods = ['POST'])
+def create_group():
+    body = request.get_json()
+    new_group = Group(**body).save()
+    return jsonify(new_group)
+
+@app.route('/get-groups', methods = ['GET'])
+def get_group():
+    group = Group.objects()
+    return jsonify(group)
 
 if __name__ == "__main__":
     app.run(debug=True)

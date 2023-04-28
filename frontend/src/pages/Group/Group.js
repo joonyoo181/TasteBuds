@@ -269,7 +269,9 @@ function Group() {
                                 <div className='group-filters'>
                                     <div className='group-filter'>
                                         <Card content={
-                                            <Icon className='group-filter-icon' fontSize={30} icon='material-symbols:filter-list-rounded' color='black' />
+                                            <div className='group-filter-icon-styling'>
+                                                <Icon className='group-filter-icon' fontSize={30} icon='material-symbols:filter-list-rounded' color='black' />
+                                            </div>
                                         }
                                         isFloating={true}
                                         />
