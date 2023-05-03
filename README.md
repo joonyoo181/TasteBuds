@@ -4,7 +4,7 @@
 Provide a platform to help users decide on restaurants based on their cravings & share their food journey with friends!
 
 ## User Motivations
-Friends are hungry but can’t decide on what to eat. They will use this app to help them decide based on location, price range, cuisine, meal time, etc
+Friends are hungry but can’t decide on what to eat. This app helps them decide based on location, price range, cuisine, meal time, etc
 
 ## Technologies
 Frontend: React.js
